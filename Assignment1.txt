@@ -1,0 +1,107 @@
+Assignment 1.txt
+Who has access
+R
+System properties
+Type
+Text
+Size
+659 bytes
+Storage used
+659 bytes
+Location
+Day 2
+Owner
+Rahul Barve
+Modified
+4 May 2022 by Rahul Barve
+Opened
+18:10 by me
+Created
+4 May 2022
+No description
+Viewers can download
+Time Limit: 15 Minutes
+
+Create a class CateringBill with following attributes:
+	int plateCount
+	int ratePerPlate
+
+Implement getters and setters.
+
+Implement 2 additional methods as per the following
+	int generateBill() --> Generates bill amount without discount
+	
+	int generateBill(int discountPercent) --> Generates bill amount with discount
+
+Write a main program to test the functionality.
+
+count: 100, rate: 150
+
+generateBill() ----> 15000
+
+generateBill(10) ----> 15000 - 1500 = 13500
+
+CateringBill cb = new CateringBill();
+cb.setPlateCount(40);
+cb.setRatePerPlate(200);
+
+cb.generateBill(); -> 8000
+cb.generateBill(10); -> 7200
+
+
+==============================================================================
+package Bill;
+
+public class CateringBill {
+	int plateCount;
+	int ratePerPlate;
+	public int getPlateCount() {
+		return plateCount;
+	}
+	public void setPlateCount(int plateCount) {
+		this.plateCount = plateCount;
+	}
+	public int getRatePerPlate() {
+		return ratePerPlate;
+	}
+	public void setRatePerPlate(int ratePerPlate) {
+		this.ratePerPlate = ratePerPlate;
+	}
+	public int generateBill() {
+		return ratePerPlate*plateCount;
+	}
+	public int generateBill(float discountPercent) {
+	 float discountedamount=  discountPercent/100;
+	 int price =ratePerPlate*plateCount-(int) (ratePerPlate*plateCount*discountedamount);
+		return price;
+	}
+	
+}
+
+package Bill;
+
+public class CateringBill {
+	int plateCount;
+	int ratePerPlate;
+	public int getPlateCount() {
+		return plateCount;
+	}
+	public void setPlateCount(int plateCount) {
+		this.plateCount = plateCount;
+	}
+	public int getRatePerPlate() {
+		return ratePerPlate;
+	}
+	public void setRatePerPlate(int ratePerPlate) {
+		this.ratePerPlate = ratePerPlate;
+	}
+	public int generateBill() {
+		return ratePerPlate*plateCount;
+	}
+	public int generateBill(float discountPercent) {
+	 float discountedamount=  discountPercent/100;
+	 int price =ratePerPlate*plateCount-(int) (ratePerPlate*plateCount*discountedamount);
+		return price;
+	}
+	
+}
