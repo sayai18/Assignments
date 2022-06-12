@@ -1,0 +1,28 @@
+JAVA
+
+Why java
+
+wide array of libraries 
+it is open source   <- not free
+platform independent
+
+platform independence
+
+platfrom is the combination of Hardware and software
+
+early 90s electronic device automation
+write once run anywhere
+
+create project
+
+JRE System library
+src
+new
+class
+no package com
+name    HelloWorld
+
+return type for function is mandatoryy
+
+
+
